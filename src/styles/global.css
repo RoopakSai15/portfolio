@@ -33,16 +33,16 @@ a:hover {
 .container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  /* padding: 2rem 1rem; */
 }
 
 /* spacing helpers */
-.section {
+/* .section {
   margin-bottom: 4rem;
-}
+} */
 
 h1, h2, h3 {
-  line-height: 1.25;
+  line-height: 1.25
 }
 
 h1 { font-size: 2.2rem; }
