@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Section from "../components/Section.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+---
+
+<BaseLayout>
+  <Section>
+    <h1>Projects</h1>
+    <p>
+      A selection of backend-focused projects, including ML-powered systems and
+      production-style APIs.
+    </p>
+  </Section>
+
+  <Section>
+    <ProjectCard
+      title="RAG Chat System"
+      description="ML-powered document question-answering system using retrieval-augmented generation."
+      tech="Node.js · ChromaDB · Docker · LLM APIs"
+      href="/projects/rag-chat"
+      github="https://github.com/yourname/rag-chat"
+    />
+
+    <ProjectCard
+      title="Job Tracker API"
+      description="Backend API for tracking job applications with authentication and role-based access control."
+      tech="Node.js · Express · PostgreSQL · Sequelize · JWT"
+      href="/projects/job-tracker"
+      github="https://github.com/yourname/job-tracker-api"
+    />
+  </Section>
+</BaseLayout>

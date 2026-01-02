@@ -1,0 +1,69 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Section from "../components/Section.astro";
+---
+
+<BaseLayout>
+  <Section>
+    <h1>Contact Me!</h1>
+  </Section>
+  <Section>
+    <form
+      action="mailto:roopaksai5577@gmail.com"
+      method="post"
+      enctype="text/plain"
+      class="contact-form"
+    >
+      <label>
+        Your Name
+        <input type="text" name="name" required />
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" required />
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </Section>
+</BaseLayout>
+
+<style>
+  .contact-form {
+    max-width: 500px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 1.25rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-family: inherit;
+  }
+
+  button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    opacity: 0.9;
+  }
+</style>

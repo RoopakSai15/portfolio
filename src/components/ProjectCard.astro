@@ -1,0 +1,36 @@
+---
+const { title, description, tech, href, github } = Astro.props;
+---
+
+<article class="card">
+  <h3>{title}</h3>
+  <p>{description}</p>
+  <p class="tech">{tech}</p>
+
+  <div class="links">
+    <a href={href}>Details →</a>
+    {github && <a href={github}>GitHub</a>}
+  </div>
+</article>
+
+<style>
+  .card {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+
+  .tech {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .links {
+    margin-top: 1rem;
+  }
+
+  .links a {
+    margin-right: 1rem;
+  }
+</style>
